@@ -36,10 +36,6 @@ vendor.oplus.hardware.biometrics.fingerprintpay.IFingerprintPay/default    u:obj
 # OLC
 vendor.oplus.hardware.olc2.IOplusLogCore/default    u:object_r:hal_oplus_olc_aidl_service:s0
 
-# HoraeService
-horae                                       u:object_r:oem_service:s0
-
-
 # OPLUSResourceManage service
 OplusResourceManagerService                 u:object_r:oem_service:s0
 

@@ -5,6 +5,7 @@
 
 package vendor.oplus.hardware.charger;
 
+import vendor.oplus.hardware.charger.ChgFuncFlag;
 import vendor.oplus.hardware.charger.testKitFeatureTestResult;
 
 @VintfStability
