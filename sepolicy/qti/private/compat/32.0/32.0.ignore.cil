@@ -6,6 +6,8 @@
 (typeattributeset new_objects
   ( new_objects
     opluscamera_app
+    horae
+    proc_horae
     system_fingerprint_prop
     system_oplus_iris_prop
     system_oplus_project_prop
