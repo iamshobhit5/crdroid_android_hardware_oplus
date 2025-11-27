@@ -1,23 +1,55 @@
+/*
+ * SPDX-FileCopyrightText: 2025 The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 package com.oplus.osense;
 
-import android.util.Log;
-import java.util.HashMap;
+import android.os.Bundle;
+import android.view.MotionEvent;
 
-/* loaded from: classes.dex */
 public class OsenseResClient {
-    private static HashMap<String, OsenseResClient> sOsenseResClientMap = new HashMap<>();
-    private static final String TAG = OsenseResClient.class.getSimpleName();
-
-    public static OsenseResClient get(Class cls) {
-        OsenseResClient resClient;
-        if (cls == null) {
-            Log.e(TAG, "the parameter class is null!!!");
-            return null;
-        }
-        String className = cls.getSimpleName();
-        synchronized (sOsenseResClientMap) {
-            resClient = sOsenseResClientMap.get(className);
-        }
-        return resClient;
+    public static OsenseResClient get(Class clazz) {
+        return new OsenseResClient();
     }
+
+    public void requestSysResource(int eventId, Bundle extra) {}
+
+    public void releaseSysResource(int eventId) {}
+
+    public long osenseSetSceneAction(Object request) {
+        return 0L;
+    }
+
+    public void osenseClrSceneAction(long handle) {}
+
+    public void osenseSetNotification(Object request) {}
+
+    public void osenseSetCtrlData(Object request) {}
+
+    public void osenseClrCtrlData() {}
+
+    public void reportKeyThread(String threadName, int tid, int supportedEventId, Bundle extra) {}
+
+    public void removeKeyThread(int tid, Bundle extra) {}
+
+    public void removeKeyThread(String threadName, Bundle extra) {}
+
+    public void setHookKeyThread(String packageName, String threadName, int op, int pid, int[] tids) {}
+
+    public void reportEvent(int eventId, Bundle extra) {}
+
+    public void registerScene(int sceneId, Object listener) {}
+
+    public void unregisterScene(int sceneId, Object listener) {}
+
+    public int osenseGetModeStatus(int mode) {
+        return 0;
+    }
+
+    public long[][][] osenseGetPerfLimit() {
+        return null;
+    }
+
+    public void osenseSendFling(MotionEvent ev, int duration) {}
 }
