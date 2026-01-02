@@ -26,11 +26,11 @@ android_app {
         "org.lineageos.settings.resources",
     ],
 
-    required: ["preinstalled-packages-platform-dolby.xml"],
+    required: ["OplusDolbyConfig"],
 }
 
 prebuilt_etc {
-    name: "preinstalled-packages-platform-dolby.xml",
+    name: "OplusDolbyConfig",
     src: "preinstalled-packages-platform-dolby.xml",
     sub_dir: "sysconfig",
     system_ext_specific: true,
